@@ -6,6 +6,17 @@ if (isset($_POST['envoie'])) {
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $insertUser = $bdd->prepare('INSERT INTO users(email, pseudo, mdp)VALUES(?, ?, ?)');
         $insertUser->execute(array($email, $pseudo, $password));
+
+        $recupUser = $bdd->prepare('SELECT * FROM users WHERE email = ? AND pseudo = ? AND mdp = ?');
+        $recupUser->execute(array($email, $pseudo, $password));
+        if ($recupUser->rowCount() > 0) {
+            $_SESSION['email'] = $email;
+            $_SESSION['pseudo'] = $pseudo;
+            $_SESSION['password'] = $password;
+            $_SESSION['id'] = $recupUser->fetch()['id'];
+        }
+
+        echo $_SESSION['id'];
     } else {
         echo 'Veuillez compléter tous les champs...';
     }
