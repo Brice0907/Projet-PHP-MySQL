@@ -37,6 +37,8 @@
         </form>
     </div>
 
+    <?php echo $_SESSION['id']; ?>
+
 </body>
 
 </html>
