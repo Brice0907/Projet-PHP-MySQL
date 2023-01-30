@@ -1,3 +1,5 @@
+<?php include_once('config/mysql.php') ?>
+
 <nav class="nav">
     <div class="nav_bloc">
         <a href="index.php" class="nav_bloc_text">S'inscrire</a>
