@@ -26,7 +26,7 @@ if (isset($_POST['envoie'])) {
                 echo 'Votre mot de passe ou email est incorrect...';
             }
 
-            header('location: http://localhost/Projet%20PHP&MySQL/Main/home.php');
+            header('location: http://localhost/Projet%20PHP&MySQL/Main/index.php');
         } else {
             echo 'Votre mot de passe ou email est incorrect...';
         }
@@ -34,6 +34,3 @@ if (isset($_POST['envoie'])) {
         echo 'Veuillez compléter tous les champs...';
     }
 }
-
-
-// peut etre remplacer la vérif de l'email par le pseudo, comme ca on récup le pseudo direct et redirection avec un "BIENVENU USER"

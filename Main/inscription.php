@@ -17,7 +17,7 @@ if (isset($_POST['envoie'])) {
             // $_SESSION['password'] = $password;
             $_SESSION['id'] = $recupUser->fetch()['id'];
         }
-        header('location: http://localhost/Projet%20PHP&MySQL/Main/home.php');
+        header('location: http://localhost/Projet%20PHP&MySQL/Main/index.php');
     } else {
         echo 'Veuillez compléter tous les champs...';
     }
