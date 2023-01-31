@@ -1,13 +1,13 @@
 <?php include_once('config/mysql.php') ?>
 
 <nav class="nav_bar">
-    <div>
-        <a href="index.php">Home</a>
-        <a href="">Contact</a>
+    <div class="nav_bar_navigation">
+        <a href="index.php" class="nav_bar_navigation_text">Home</a>
+        <a href="contact.php" class="nav_bar_navigation_text">Contact</a>
     </div>
-    <div>
-        <a href="deconnexion.php">
-            <button>Se déconnecter</button>
-        </a>
-    </div>
+    <a href="deconnexion.php" class="nav_bar_deconnexion">
+        <div>
+            Se déconnecter
+        </div>
+    </a>
 </nav>

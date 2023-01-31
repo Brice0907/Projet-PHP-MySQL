@@ -14,12 +14,16 @@
     <title>Home</title>
 </head>
 
-<body>
+<body class="body">
 
     <?php include_once('nav.php') ?>
 
+    <section class="banner">
+        <img src="./image/grandtriangle.jpg" alt="" class="banner_img">
+    </section>
+
     <div>TU ES BIEN SUR LA PAGE HOME</div>
-    <?php 'Bienvenur' . $_SESSION['email'] ?>
+    <?php echo 'Bienvenue ' . $_SESSION['email']; ?>
     <!-- re faire une recherche dans la bdd pour trouvere le pseudo et écrire Bienvenue X -->
 
 </body>
