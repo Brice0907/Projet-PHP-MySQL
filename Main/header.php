@@ -10,7 +10,7 @@
 
 <nav class="nav_bar">
     <div>
-        <a href="">Home</a>
+        <a href="home.php">Home</a>
         <a href="">Contact</a>
     </div>
     <div>
