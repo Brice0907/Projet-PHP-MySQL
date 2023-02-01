@@ -15,9 +15,9 @@ a {
     margin-top: 20px;
     margin-bottom: 50px;
     max-width: 300px;
-    background-color: #317ab6;
+    background-color: #3c4349;
+    box-shadow: 0px 0px 5px 0px white;
     border-radius: 7px;
-    box-shadow: 0px 0px 5px 0px;
 }
 
 .nav_bloc {
@@ -27,9 +27,12 @@ a {
 
 .nav_bloc_text {
     padding: 10px 20px;
+    color: white;
+    font-weight: bold;
     font-size: 20px;
     display: flex;
     align-items: center;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* CSS Home */
@@ -68,39 +71,96 @@ a {
 }
 
 /* Banière */
-.banner {
+.body_fond {
     max-width: 1903px;
+    position: relative;
 }
 
-.banner_img {
+.body_fond_img {
     width: 100%;
     object-fit: cover;
     height: 1080px;
 }
 
+.body_fond_title {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* CSS Footer */
+.footer {
+    width: 100%;
+    height: 200px;
+    background: black;
+    padding-top: 30px;
+}
+
+.footer_line {
+    margin: auto;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.footer_logo {
+    text-align: center;
+    color: white;
+    font-size: 55px;
+}
+
+.footer_text {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.footer_bloc {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.footer_bloc_logo {
+    color: white;
+    font-size: 23px;
+    margin-right: 5px;
+}
+
+
 /* CSS Inscription */
+.body_black {
+    background: #000000;
+}
+
 .body_inscription {
     padding: 30px;
     width: 450px;
     max-height: 500px;
-    background-color: #317ab6;
+    background-color: #3c4349;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px white;
 }
 
 .body_inscription_title {
     text-align: center;
+    color: white;
     margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .body_inscription_form {
     height: 350px;
-    background-color: #6995BA;
+    background-color: #3c4349;
     border-radius: 10px;
-    box-shadow: 0px 0px 7px 2px #6995BA;
+    box-shadow: 0px 0px 6px 0px white;
     padding: 15px 10px;
 }
+
+/* Faire un hover avec un box shadow et la couleur rgb(218, 137, 255) pour faire un rappel de violet */
 
 .body_inscription_form_bloc {
     display: flex;

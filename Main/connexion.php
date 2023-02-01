@@ -11,7 +11,7 @@
     <title>Connexion</title>
 </head>
 
-<body>
+<body class="body_black">
 
     <!-- Navigation de connection -->
     <?php include_once('header.php') ?>
