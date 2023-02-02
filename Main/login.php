@@ -20,7 +20,6 @@ if (isset($_POST['envoie'])) {
                 $recupUserData->execute(array($email, $hash));
 
                 $_SESSION['email'] = $email;
-                // $_SESSION['pseudo'] = $recupUserData->fetch()['pseudo'];
                 $_SESSION['id'] = $recupUserData->fetch()['id'];
             } else {
                 echo 'Votre mot de passe ou email est incorrect...';

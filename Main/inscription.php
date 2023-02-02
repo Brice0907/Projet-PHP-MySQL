@@ -14,7 +14,6 @@ if (isset($_POST['envoie'])) {
         if ($recupUser->rowCount() > 0) {
             $_SESSION['email'] = $email;
             $_SESSION['pseudo'] = $pseudo;
-            // $_SESSION['password'] = $password;
             $_SESSION['id'] = $recupUser->fetch()['id'];
         }
         header('location: http://localhost/Projet%20PHP&MySQL/Main/index.php');

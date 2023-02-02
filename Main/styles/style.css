@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+.white {
+    color: white;
+}
+
+.centre {
+    display: flex;
+}
+
 /* Nav Connexion */
 .nav {
     margin: auto;
@@ -72,7 +80,7 @@ a {
 
 /* Banière */
 .body_fond {
-    max-width: 1903px;
+    max-height: 1080px;
     position: relative;
 }
 
@@ -90,6 +98,74 @@ a {
     top: 10px;
     text-align: center;
     width: 100%;
+}
+
+.body_fond_bvn {
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.body_fond_bloc {
+    position: absolute;
+    top: 150px;
+    right: 10%;
+    left: 10%;
+    height: 870px;
+    background: black;
+    opacity: 0.87;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.body_fond_bloc_btn {
+    color: white;
+    font-size: 23px;
+    border: 1px solid white;
+    padding: 7px 9px;
+    border-radius: 10px;
+}
+
+.body_fond_bloc_form {
+    border: 1px solid white;
+    width: 550px;
+    height: 450px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.body_fond_bloc_form_bloc {
+    text-align: center;
+}
+
+.body_fond_bloc_form_bloc_text {
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body_fond_bloc_form_bloc_file {
+    max-width: 116px;
+}
+
+.body_fond_bloc_form_bloc_description {
+    max-height: 80px;
+    max-width: 270px;
+}
+
+.body_fond_bloc_form_submit {
+    width: 90px;
+    height: 30px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /* CSS Footer */

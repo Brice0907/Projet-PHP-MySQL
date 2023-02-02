@@ -18,14 +18,17 @@
 <body class="body">
 
     <?php include_once('nav.php') ?>
+    <?php include_once('user.php') ?>
 
     <section class="body_fond">
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">
         <h1 class="body_fond_title">E-SMOCK</h1>
+        <h2 class="body_fond_bvn">Bienvenue <?php echo $_SESSION['pseudo'] ?> sur notre nouveau site...</h2>
+        <div class="body_fond_bloc">
+            <a href="create.php" class="body_fond_bloc_btn">Ajout d'un produit</a>
+        </div>
     </section>
 
-    <?php echo 'Bienvenue ' . $_SESSION['email']; ?>
-    <!-- re faire une recherche dans la bdd pour trouvere le pseudo et écrire Bienvenue X -->
 
     <?php include_once('footer.php') ?>
 
