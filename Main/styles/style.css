@@ -133,7 +133,7 @@ a {
 .body_fond_bloc_form {
     border: 1px solid white;
     width: 550px;
-    height: 450px;
+    height: 400px;
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -149,10 +149,6 @@ a {
     font-size: 22px;
     display: flex;
     flex-direction: column;
-}
-
-.body_fond_bloc_form_bloc_file {
-    max-width: 116px;
 }
 
 .body_fond_bloc_form_bloc_description {

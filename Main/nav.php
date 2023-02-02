@@ -1,4 +1,6 @@
-<?php include_once('config/mysql.php') ?>
+<?php include_once('config/mysql.php');
+include_once('variable.php')
+?>
 
 <nav class="nav_bar">
     <div class="nav_bar_navigation">

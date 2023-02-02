@@ -1,19 +1,21 @@
 <?php session_start(); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/62e09fd665.js" crossorigin="anonymous"></script>
     <title>Ajout d'un produit</title>
 </head>
 
 <body>
 
     <?php include_once('nav.php') ?>
+    <?php include_once('post_create.php') ?>
 
     <section class="body_fond">
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">
@@ -23,10 +25,6 @@
                 <div class="body_fond_bloc_form_bloc">
                     <label for="produitTitle" class="body_fond_bloc_form_bloc_text white">Titre du produit : </label>
                     <input type="text" class="" name="produitTitle" required autocomplete="off">
-                </div>
-                <div class="body_fond_bloc_form_bloc">
-                    <label for="produitImage" class="body_fond_bloc_form_bloc_text white">Image du produit : </label>
-                    <input type="file" class="body_fond_bloc_form_bloc_file" name="produitImage" required>
                 </div>
                 <div class="body_fond_bloc_form_bloc">
                     <label for="produitDescription" class="body_fond_bloc_form_bloc_text white">Description du produit :</label>
