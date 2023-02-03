@@ -23,9 +23,17 @@
     <section class="body_fond">
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">
         <h1 class="body_fond_title">E-SMOCK</h1>
-        <h2 class="body_fond_bvn">Bienvenue <?php echo $_SESSION['pseudo'] ?> sur notre nouveau site...</h2>
+        <h2 class="body_fond_bvn">Bienvenue <?php echo $_SESSION['pseudo'] ?> sur notre site...</h2>
         <div class="body_fond_bloc">
-            <a href="create.php" class="body_fond_bloc_btn">Ajout d'un produit</a>
+            <div class="body_fond_bloc_haut">
+                <a href="create.php" class="body_fond_bloc_haut_btn">Ajout d'un produit</a>
+            </div>
+
+            <!-- Contenue venant de la base de donnée -->
+            <div class="body_fond_bloc_affichage">
+                <?php include_once('read.php') ?>
+            </div>
+
         </div>
     </section>
 

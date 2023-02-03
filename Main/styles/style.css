@@ -119,15 +119,31 @@ a {
     background: black;
     opacity: 0.87;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-.body_fond_bloc_btn {
+.body_fond_bloc_haut {
+    text-align: center;
+}
+
+.body_fond_bloc_haut_btn {
     color: white;
     font-size: 23px;
     border: 1px solid white;
     padding: 7px 9px;
     border-radius: 10px;
+
+}
+
+.body_fond_bloc_affichage {
+    border: 2px solid white;
+    height: 700px;
+    width: 800px;
+    border-radius: 10px;
+    margin: auto;
+    color: white;
 }
 
 .body_fond_bloc_form {
