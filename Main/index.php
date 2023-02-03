@@ -17,8 +17,8 @@
 
 <body class="body">
 
-    <?php include_once('nav.php') ?>
     <?php include_once('user.php') ?>
+    <?php include_once('nav.php') ?>
 
     <section class="body_fond">
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">

@@ -8,18 +8,27 @@ while ($produit = $result->fetch(PDO::FETCH_OBJ)) {
 ?>
 
     <div class="read">
-        <div>
-            <strong>Nom du produit</strong> : <?= $produit->title ?>
+        <div class="read_title">
+            <div>Nom du produit : <?= $produit->title ?></div>
         </div>
-        <div>
-            <strong>Description</strong> : <?= $produit->descriptionpdt ?>
+        <div class="read_description">
+            <div>Description : <?= $produit->descriptionpdt ?></div>
         </div>
-        <div>
-            <strong>Prix</strong> : <?= $produit->prix ?>€
+        <div class="read_bloc">
+            <div class="read_bloc_pseudo">
+                <div>Pseudo: <?= $produit->pseudo ?></div>
+            </div>
+            <div class="read_bloc_price">
+                <div>Prix: <?= $produit->prix ?>€</div>
+            </div>
         </div>
-        <div>
-            <strong>pseudo</strong> : <?= $produit->pseudo ?>
-        </div>
+        <?php
+        if (isset($loggedUser) && $produit->userid === $loggedUser['id']) : ?>
+            <div>
+                <div>Editer le produit</div>
+                <div>Supprimer le produit</div>
+            </div>
+        <?php endif; ?>
     </div>
 
 <?php
