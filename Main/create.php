@@ -24,7 +24,7 @@
             <form method="post" class="body_fond_bloc_form" enctype="multipart/form-data">
                 <div class="body_fond_bloc_form_bloc">
                     <label for="produitTitle" class="body_fond_bloc_form_bloc_text white">Titre du produit : </label>
-                    <input type="text" class="" name="produitTitle" required autocomplete="off">
+                    <input type="text" name="produitTitle" required autocomplete="off">
                 </div>
                 <div class="body_fond_bloc_form_bloc">
                     <label for="produitDescription" class="body_fond_bloc_form_bloc_text white">Description du produit :</label>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="body_fond_bloc_form_bloc">
                     <label for="produitPrice" class="body_fond_bloc_form_bloc_text white">Prix : </label>
-                    <input type="number" class="" name="produitPrice" required autocomplete="off">
+                    <input type="number" name="produitPrice" required autocomplete="off">
                 </div>
                 <button class="body_fond_bloc_form_submit" type="submit" name="ajout">Ajouter</button>
             </form>

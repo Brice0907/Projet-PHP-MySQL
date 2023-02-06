@@ -181,6 +181,29 @@ a {
     color: rgb(218, 137, 255);
 }
 
+.body_fond_bloc_delete {
+    width: 430px;
+    height: 200px;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.body_fond_bloc_delete_text {
+    font-size: 22px;
+    text-align: center;
+}
+
+.body_fond_bloc_delete_btn {
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px 7px;
+    border: 1px solid rgb(218, 137, 255);
+}
+
 .body_fond_bloc_form {
     border: 1px solid white;
     width: 550px;

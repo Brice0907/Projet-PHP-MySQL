@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once('./config/mysql.php');
 ?>
 
 <!DOCTYPE html>
@@ -24,16 +23,17 @@ include_once('./config/mysql.php');
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">
         <h1 class="body_fond_title">Suppression du produit</h1>
         <div class="body_fond_bloc centre">
-            <form action="post_delete.php" method="POST">
-                <div>
-                    <label for="id">Identidiant du produit</label>
+            <form action="post_delete.php" method="POST" class="body_fond_bloc_delete">
+                <div class="body_fond_bloc_delete_text white">
+                    <label for="id">Voulez vous vraiment supprimer votre produit ? Celle-ci sera définitive</label>
                     <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                 </div>
-                <button type="submit">La suppression est définitive</button>
+                <button type="submit" class="body_fond_bloc_delete_btn">Supprimer</button>
             </form>
         </div>
+    </section>
 
-        <?php include_once('footer.php') ?>
+    <?php include_once('footer.php') ?>
 
 </body>
 

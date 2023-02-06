@@ -16,7 +16,7 @@ while ($produit = $result->fetch(PDO::FETCH_OBJ)) {
         </div>
         <div class="read_bloc">
             <div class="read_bloc_pseudo">
-                <div>Pseudo: <?= $produit->pseudo ?></div>
+                <div>Mis en vente par : <?= $produit->pseudo ?></div>
             </div>
             <div class="read_bloc_price">
                 <div>Prix: <?= $produit->prix ?>€</div>
@@ -26,7 +26,7 @@ while ($produit = $result->fetch(PDO::FETCH_OBJ)) {
         if (isset($loggedUser) && $produit->userid === $loggedUser['id']) : ?>
             <div class="read_btn">
                 <div class="read_btn_bloc">
-                    <a href="update.php" class="read_btn_bloc_text">Editer le produit</a>
+                    <a href="update.php?id=<?php echo ($produit->id); ?>" class="read_btn_bloc_text">Editer le produit</a>
                     <a href="delete.php?id=<?php echo ($produit->id); ?>" class="read_btn_bloc_text">Supprimer le produit</a>
                 </div>
             </div>
