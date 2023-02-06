@@ -24,9 +24,11 @@ while ($produit = $result->fetch(PDO::FETCH_OBJ)) {
         </div>
         <?php
         if (isset($loggedUser) && $produit->userid === $loggedUser['id']) : ?>
-            <div>
-                <div>Editer le produit</div>
-                <div>Supprimer le produit</div>
+            <div class="read_btn">
+                <div class="read_btn_bloc">
+                    <a href="update.php" class="read_btn_bloc_text">Editer le produit</a>
+                    <a href="delete.php" class="read_btn_bloc_text">Supprimer le produit</a>
+                </div>
             </div>
         <?php endif; ?>
     </div>

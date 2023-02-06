@@ -140,7 +140,7 @@ a {
 .body_fond_bloc_affichage {
     border: 2px solid white;
     height: 700px;
-    width: 800px;
+    max-width: 800px;
     border-radius: 10px;
     margin: auto;
     color: white;
@@ -153,6 +153,32 @@ a {
     padding: 10px 10px;
     min-height: 150px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.read_bloc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.read_btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read_btn_bloc {
+    display: flex;
+    justify-content: space-between;
+    width: 275px;
+}
+
+.read_btn_bloc_text {
+    border: 1px solid rgb(218, 137, 255);
+    padding: 5px 7px;
+    border-radius: 10px;
+    color: rgb(218, 137, 255);
 }
 
 .body_fond_bloc_form {
