@@ -27,7 +27,7 @@ while ($produit = $result->fetch(PDO::FETCH_OBJ)) {
             <div class="read_btn">
                 <div class="read_btn_bloc">
                     <a href="update.php" class="read_btn_bloc_text">Editer le produit</a>
-                    <a href="delete.php" class="read_btn_bloc_text">Supprimer le produit</a>
+                    <a href="delete.php?id=<?php echo ($produit->id); ?>" class="read_btn_bloc_text">Supprimer le produit</a>
                 </div>
             </div>
         <?php endif; ?>
