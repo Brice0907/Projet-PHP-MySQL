@@ -27,7 +27,7 @@
             </div>
             <div class="body_inscription_form_bloc">
                 <label for="text" class="body_inscription_form_bloc_text">Pseudo :</label>
-                <input type="text" id="pseudo" name="pseudo" class="body_inscription_form_bloc_input" required autocomplete="off">
+                <input type="text" id="pseudo" name="pseudo" class="body_inscription_form_bloc_input" required maxlength="20" autocomplete="off">
             </div>
             <div class="body_inscription_form_bloc">
                 <label for="password" class="body_inscription_form_bloc_text">Mot de passe :</label>

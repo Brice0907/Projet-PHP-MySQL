@@ -37,7 +37,7 @@ $produit = $recupProduitStatement->fetch(PDO::FETCH_ASSOC);
         <img src="./image/grandtriangle.jpg" alt="Image de fond" class="body_fond_img">
         <h1 class="body_fond_title">Modification du produit</h1>
         <div class="body_fond_bloc centre">
-            <form action="post_update.php" method="POST">
+            <form action="post_update.php" method="POST" class="body_fond_bloc_form">
                 <div>
                     <label for="id"></label>
                     <input type="hidden" name="id" value="<?php echo ($_GET['id']); ?>">
